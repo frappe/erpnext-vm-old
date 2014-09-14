@@ -1,12 +1,15 @@
 {"builders": [{
+	  "vm_name": "ERPNext-{{isotime \"020106\"}}",
 	  "type": "virtualbox-ovf",
+	  "format": "ova",
+	  "headless": true,
 	  "source_path": "/home/pdvyas/Documents/ERPNext 190614_1.ova",
-	  "ssh_username": "erpnext",
+	  "ssh_username": "root",
 	  "ssh_password": "erpnext",
       "guest_additions_mode": "disable",
 	  "ssh_port": 22,
 	  "ssh_wait_timeout": "300s",
-	  "export_opts": "--product 'ERPNext' --producturl 'https://erpnext.com' --vendor 'Web Notes Techonologies' --vendorurl 'https://frappe.io' --description 'ERPNext Evaluation VM'",
+	  "export_opts": ["--vsys", "0", "--product", "ERPNext", "--producturl", "https://erpnext.com", "--vendor", "Web Notes Techonologies", "--vendorurl", "https://frappe.io", "--description", "ERPNext Evaluation VM"],
 	  "shutdown_command": " echo 'packer' | shutdown -P -h now"
 	}],
 	"provisioners": [{
