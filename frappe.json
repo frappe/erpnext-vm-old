@@ -3,7 +3,7 @@
 	  "type": "virtualbox-ovf",
 	  "format": "ova",
 	  "headless": true,
-	  "source_path": "/home/pdvyas/Documents/ERPNext 190614_1.ova",
+	  "source_path": "oldvm.ova",
 	  "ssh_username": "root",
 	  "ssh_password": "erpnext",
       "guest_additions_mode": "disable",
