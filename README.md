@@ -1,4 +1,4 @@
-This packer script updates existing ERPNext VM.
+This packer script updates existing ERPNext VM image.
 
 Steps
 
@@ -9,4 +9,4 @@ Steps
 * Run packer script
 
 	`packer build frappe.json`
-* Find the new vm in `output-virtualbox-ovf` directory
+* Find the new image in `output-virtualbox-ovf` directory
